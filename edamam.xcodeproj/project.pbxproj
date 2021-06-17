@@ -1,0 +1,817 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42BB8008D56562539B2452CB /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BB80F6E7430717646143AF /* SearchView.swift */; };
+		42BB8037AC217636A32EB583 /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BB8C8E9B8FBBDAD3289D49 /* APIConfig.swift */; };
+		42BB806694C02E08BE4BE6D6 /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BB89EBAB02A7B0A1A516E7 /* FavoriteViewModel.swift */; };
+		42BB8245A7FF54D1DEDEE46D /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BB833C3CD41ED2EDD21CB6 /* FavoriteView.swift */; };
+		42BB841297BDC498D38DF97C /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BB84DF85D8E4C53308DC88 /* SearchViewModel.swift */; };
+		42BB84F105CB226C28278E4A /* Hit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BB84F9D73EEE1BD9995FE0 /* Hit.swift */; };
+		42BB85C785F703EFD8E86776 /* Hits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BB843423DC023C2DD7FD7E /* Hits.swift */; };
+		42BB87811BFFFB5597ACEBCC /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BB8CFD361B8D4A023D23DD /* RecipeView.swift */; };
+		42BB87974D6A79B9A672755C /* IngredientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BB896FC288F8FD385A608B /* IngredientModel.swift */; };
+		42BB88C422E4631747B6BE38 /* RecipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BB8A0CCA4DB4935DE052E6 /* RecipeViewModel.swift */; };
+		42BB8C65F8B5A9660C0302A7 /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BB806BA39FC1F1B78B573B /* RecipeModel.swift */; };
+		42BB8CEDD436719A8A55705F /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BB8856E263B54ED0321BC7 /* APIRequest.swift */; };
+		7364BCA4266A81B700F53952 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7364BCA3266A81B700F53952 /* AppDelegate.swift */; };
+		7364BCA6266A81B700F53952 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7364BCA5266A81B700F53952 /* SceneDelegate.swift */; };
+		7364BCA8266A81B700F53952 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7364BCA7266A81B700F53952 /* ContentView.swift */; };
+		7364BCAB266A81B700F53952 /* edamam.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7364BCA9266A81B700F53952 /* edamam.xcdatamodeld */; };
+		7364BCAD266A81B800F53952 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7364BCAC266A81B800F53952 /* Assets.xcassets */; };
+		7364BCB0266A81B800F53952 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7364BCAF266A81B800F53952 /* Preview Assets.xcassets */; };
+		7364BCB3266A81B800F53952 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7364BCB1266A81B800F53952 /* LaunchScreen.storyboard */; };
+		7364BCBE266A81B900F53952 /* edamamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7364BCBD266A81B900F53952 /* edamamTests.swift */; platformFilter = ios; };
+		7364BCC9266A81B900F53952 /* edamamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7364BCC8266A81B900F53952 /* edamamUITests.swift */; platformFilter = ios; };
+		7364BCDA26764DD000F53952 /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7364BCD726764DD000F53952 /* AsyncImage.swift */; };
+		7364BCDB26764DD000F53952 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7364BCD826764DD000F53952 /* ImageCache.swift */; };
+		7364BCDC26764DD000F53952 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7364BCD926764DD000F53952 /* ImageLoader.swift */; };
+		7364BCE02676528800F53952 /* EnvironmentValues+ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7364BCDF2676528800F53952 /* EnvironmentValues+ImageCache.swift */; };
+		73BB0B02267A46A7009D16DD /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; platformFilter = ios; productRef = 73BB0B01267A46A7009D16DD /* ViewInspector */; };
+		73BB0B03267A4992009D16DD /* ContentViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BB8ED07CFD19309C3AEDF4 /* ContentViewTests.swift */; platformFilter = ios; };
+		73BB0B04267A4EE6009D16DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7364BCA7266A81B700F53952 /* ContentView.swift */; platformFilter = ios; };
+		73BB0B05267A4F1B009D16DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7364BCA3266A81B700F53952 /* AppDelegate.swift */; platformFilter = ios; };
+		73BB0B06267A4F4F009D16DD /* EnvironmentValues+ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7364BCDF2676528800F53952 /* EnvironmentValues+ImageCache.swift */; platformFilter = ios; };
+		73BB0B07267A4F52009D16DD /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7364BCD826764DD000F53952 /* ImageCache.swift */; platformFilter = ios; };
+		73BB0B08267A4F56009D16DD /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7364BCD726764DD000F53952 /* AsyncImage.swift */; platformFilter = ios; };
+		73BB0B09267A4F58009D16DD /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7364BCD926764DD000F53952 /* ImageLoader.swift */; platformFilter = ios; };
+		73BB0B0A267A4F5A009D16DD /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BB806BA39FC1F1B78B573B /* RecipeModel.swift */; platformFilter = ios; };
+		73BB0B0B267A4F5D009D16DD /* IngredientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BB896FC288F8FD385A608B /* IngredientModel.swift */; platformFilter = ios; };
+		73BB0B0C267A4F5F009D16DD /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BB8CFD361B8D4A023D23DD /* RecipeView.swift */; platformFilter = ios; };
+		73BB0B0D267A4F62009D16DD /* RecipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BB8A0CCA4DB4935DE052E6 /* RecipeViewModel.swift */; platformFilter = ios; };
+		73BB0B0E267A4F71009D16DD /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BB80F6E7430717646143AF /* SearchView.swift */; platformFilter = ios; };
+		73BB0B0F267A4F71009D16DD /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BB84DF85D8E4C53308DC88 /* SearchViewModel.swift */; platformFilter = ios; };
+		73BB0B10267A4F71009D16DD /* Hits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BB843423DC023C2DD7FD7E /* Hits.swift */; platformFilter = ios; };
+		73BB0B11267A4F71009D16DD /* Hit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BB84F9D73EEE1BD9995FE0 /* Hit.swift */; platformFilter = ios; };
+		73BB0B12267A4F71009D16DD /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BB833C3CD41ED2EDD21CB6 /* FavoriteView.swift */; platformFilter = ios; };
+		73BB0B13267A4F71009D16DD /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BB89EBAB02A7B0A1A516E7 /* FavoriteViewModel.swift */; platformFilter = ios; };
+		73BB0B14267A4F71009D16DD /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BB8856E263B54ED0321BC7 /* APIRequest.swift */; platformFilter = ios; };
+		73BB0B15267A4F71009D16DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7364BCA5266A81B700F53952 /* SceneDelegate.swift */; platformFilter = ios; };
+		73BB0B16267A4F84009D16DD /* edamam.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7364BCA9266A81B700F53952 /* edamam.xcdatamodeld */; platformFilter = ios; };
+		73BB0B18267A5440009D16DD /* RecipeViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB0B17267A5440009D16DD /* RecipeViewTests.swift */; platformFilter = ios; };
+		73BB0B19267ACF82009D16DD /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BB8C8E9B8FBBDAD3289D49 /* APIConfig.swift */; platformFilter = ios; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7364BCBA266A81B900F53952 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7364BC98266A81B700F53952 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7364BC9F266A81B700F53952;
+			remoteInfo = edamam;
+		};
+		7364BCC5266A81B900F53952 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7364BC98266A81B700F53952 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7364BC9F266A81B700F53952;
+			remoteInfo = edamam;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		42BB806BA39FC1F1B78B573B /* RecipeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
+		42BB80F6E7430717646143AF /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		42BB833C3CD41ED2EDD21CB6 /* FavoriteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
+		42BB843423DC023C2DD7FD7E /* Hits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hits.swift; sourceTree = "<group>"; };
+		42BB84DF85D8E4C53308DC88 /* SearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		42BB84F9D73EEE1BD9995FE0 /* Hit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hit.swift; sourceTree = "<group>"; };
+		42BB8856E263B54ED0321BC7 /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		42BB896FC288F8FD385A608B /* IngredientModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientModel.swift; sourceTree = "<group>"; };
+		42BB89EBAB02A7B0A1A516E7 /* FavoriteViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
+		42BB8A0CCA4DB4935DE052E6 /* RecipeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeViewModel.swift; sourceTree = "<group>"; };
+		42BB8C8E9B8FBBDAD3289D49 /* APIConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
+		42BB8CFD361B8D4A023D23DD /* RecipeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
+		42BB8ED07CFD19309C3AEDF4 /* ContentViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewTests.swift; sourceTree = "<group>"; };
+		7364BCA0266A81B700F53952 /* edamam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = edamam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7364BCA3266A81B700F53952 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7364BCA5266A81B700F53952 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7364BCA7266A81B700F53952 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7364BCAA266A81B700F53952 /* edamam.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = edamam.xcdatamodel; sourceTree = "<group>"; };
+		7364BCAC266A81B800F53952 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7364BCAF266A81B800F53952 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7364BCB2266A81B800F53952 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7364BCB4266A81B800F53952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7364BCB9266A81B900F53952 /* edamamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = edamamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7364BCBD266A81B900F53952 /* edamamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = edamamTests.swift; sourceTree = "<group>"; };
+		7364BCBF266A81B900F53952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7364BCC4266A81B900F53952 /* edamamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = edamamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7364BCC8266A81B900F53952 /* edamamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = edamamUITests.swift; sourceTree = "<group>"; };
+		7364BCCA266A81B900F53952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7364BCD726764DD000F53952 /* AsyncImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
+		7364BCD826764DD000F53952 /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		7364BCD926764DD000F53952 /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		7364BCDF2676528800F53952 /* EnvironmentValues+ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EnvironmentValues+ImageCache.swift"; sourceTree = "<group>"; };
+		73BB0B17267A5440009D16DD /* RecipeViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7364BC9D266A81B700F53952 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7364BCB6266A81B900F53952 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73BB0B02267A46A7009D16DD /* ViewInspector in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7364BCC1266A81B900F53952 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7364BC97266A81B700F53952 = {
+			isa = PBXGroup;
+			children = (
+				7364BCA2266A81B700F53952 /* edamam */,
+				7364BCBC266A81B900F53952 /* edamamTests */,
+				7364BCC7266A81B900F53952 /* edamamUITests */,
+				7364BCA1266A81B700F53952 /* Products */,
+				73BB0B00267A46A7009D16DD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7364BCA1266A81B700F53952 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7364BCA0266A81B700F53952 /* edamam.app */,
+				7364BCB9266A81B900F53952 /* edamamTests.xctest */,
+				7364BCC4266A81B900F53952 /* edamamUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7364BCA2266A81B700F53952 /* edamam */ = {
+			isa = PBXGroup;
+			children = (
+				7364BCD626764D6200F53952 /* AsyncImage */,
+				73BB0AFA267A366A009D16DD /* Recipe */,
+				73BB0AF9267A3654009D16DD /* Search */,
+				73BB0AFB267A3679009D16DD /* Favorite */,
+				73BB0AFC267A374E009D16DD /* Network */,
+				7364BCA3266A81B700F53952 /* AppDelegate.swift */,
+				7364BCA5266A81B700F53952 /* SceneDelegate.swift */,
+				7364BCA7266A81B700F53952 /* ContentView.swift */,
+				7364BCAC266A81B800F53952 /* Assets.xcassets */,
+				7364BCB1266A81B800F53952 /* LaunchScreen.storyboard */,
+				7364BCB4266A81B800F53952 /* Info.plist */,
+				7364BCA9266A81B700F53952 /* edamam.xcdatamodeld */,
+				7364BCAE266A81B800F53952 /* Preview Content */,
+			);
+			path = edamam;
+			sourceTree = "<group>";
+		};
+		7364BCAE266A81B800F53952 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7364BCAF266A81B800F53952 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7364BCBC266A81B900F53952 /* edamamTests */ = {
+			isa = PBXGroup;
+			children = (
+				7364BCBD266A81B900F53952 /* edamamTests.swift */,
+				7364BCBF266A81B900F53952 /* Info.plist */,
+				42BB8ED07CFD19309C3AEDF4 /* ContentViewTests.swift */,
+				73BB0B17267A5440009D16DD /* RecipeViewTests.swift */,
+			);
+			path = edamamTests;
+			sourceTree = "<group>";
+		};
+		7364BCC7266A81B900F53952 /* edamamUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7364BCC8266A81B900F53952 /* edamamUITests.swift */,
+				7364BCCA266A81B900F53952 /* Info.plist */,
+			);
+			path = edamamUITests;
+			sourceTree = "<group>";
+		};
+		7364BCD626764D6200F53952 /* AsyncImage */ = {
+			isa = PBXGroup;
+			children = (
+				7364BCDF2676528800F53952 /* EnvironmentValues+ImageCache.swift */,
+				7364BCD726764DD000F53952 /* AsyncImage.swift */,
+				7364BCD826764DD000F53952 /* ImageCache.swift */,
+				7364BCD926764DD000F53952 /* ImageLoader.swift */,
+			);
+			path = AsyncImage;
+			sourceTree = "<group>";
+		};
+		73BB0AF9267A3654009D16DD /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				42BB80F6E7430717646143AF /* SearchView.swift */,
+				42BB84DF85D8E4C53308DC88 /* SearchViewModel.swift */,
+				42BB843423DC023C2DD7FD7E /* Hits.swift */,
+				42BB84F9D73EEE1BD9995FE0 /* Hit.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		73BB0AFA267A366A009D16DD /* Recipe */ = {
+			isa = PBXGroup;
+			children = (
+				42BB806BA39FC1F1B78B573B /* RecipeModel.swift */,
+				42BB896FC288F8FD385A608B /* IngredientModel.swift */,
+				42BB8CFD361B8D4A023D23DD /* RecipeView.swift */,
+				42BB8A0CCA4DB4935DE052E6 /* RecipeViewModel.swift */,
+			);
+			path = Recipe;
+			sourceTree = "<group>";
+		};
+		73BB0AFB267A3679009D16DD /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				42BB833C3CD41ED2EDD21CB6 /* FavoriteView.swift */,
+				42BB89EBAB02A7B0A1A516E7 /* FavoriteViewModel.swift */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		73BB0AFC267A374E009D16DD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				42BB8856E263B54ED0321BC7 /* APIRequest.swift */,
+				42BB8C8E9B8FBBDAD3289D49 /* APIConfig.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		73BB0B00267A46A7009D16DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7364BC9F266A81B700F53952 /* edamam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7364BCCD266A81B900F53952 /* Build configuration list for PBXNativeTarget "edamam" */;
+			buildPhases = (
+				7364BC9C266A81B700F53952 /* Sources */,
+				7364BC9D266A81B700F53952 /* Frameworks */,
+				7364BC9E266A81B700F53952 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = edamam;
+			packageProductDependencies = (
+			);
+			productName = edamam;
+			productReference = 7364BCA0266A81B700F53952 /* edamam.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7364BCB8266A81B900F53952 /* edamamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7364BCD0266A81B900F53952 /* Build configuration list for PBXNativeTarget "edamamTests" */;
+			buildPhases = (
+				7364BCB5266A81B900F53952 /* Sources */,
+				7364BCB6266A81B900F53952 /* Frameworks */,
+				7364BCB7266A81B900F53952 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7364BCBB266A81B900F53952 /* PBXTargetDependency */,
+			);
+			name = edamamTests;
+			packageProductDependencies = (
+				73BB0B01267A46A7009D16DD /* ViewInspector */,
+			);
+			productName = edamamTests;
+			productReference = 7364BCB9266A81B900F53952 /* edamamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7364BCC3266A81B900F53952 /* edamamUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7364BCD3266A81B900F53952 /* Build configuration list for PBXNativeTarget "edamamUITests" */;
+			buildPhases = (
+				7364BCC0266A81B900F53952 /* Sources */,
+				7364BCC1266A81B900F53952 /* Frameworks */,
+				7364BCC2266A81B900F53952 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7364BCC6266A81B900F53952 /* PBXTargetDependency */,
+			);
+			name = edamamUITests;
+			productName = edamamUITests;
+			productReference = 7364BCC4266A81B900F53952 /* edamamUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7364BC98266A81B700F53952 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					7364BC9F266A81B700F53952 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					7364BCB8266A81B900F53952 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 7364BC9F266A81B700F53952;
+					};
+					7364BCC3266A81B900F53952 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 7364BC9F266A81B700F53952;
+					};
+				};
+			};
+			buildConfigurationList = 7364BC9B266A81B700F53952 /* Build configuration list for PBXProject "edamam" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7364BC97266A81B700F53952;
+			packageReferences = (
+				73BB0AFD267A3B68009D16DD /* XCRemoteSwiftPackageReference "ViewInspector" */,
+			);
+			productRefGroup = 7364BCA1266A81B700F53952 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7364BC9F266A81B700F53952 /* edamam */,
+				7364BCB8266A81B900F53952 /* edamamTests */,
+				7364BCC3266A81B900F53952 /* edamamUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7364BC9E266A81B700F53952 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7364BCB3266A81B800F53952 /* LaunchScreen.storyboard in Resources */,
+				7364BCB0266A81B800F53952 /* Preview Assets.xcassets in Resources */,
+				7364BCAD266A81B800F53952 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7364BCB7266A81B900F53952 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7364BCC2266A81B900F53952 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7364BC9C266A81B700F53952 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7364BCAB266A81B700F53952 /* edamam.xcdatamodeld in Sources */,
+				7364BCA4266A81B700F53952 /* AppDelegate.swift in Sources */,
+				7364BCDB26764DD000F53952 /* ImageCache.swift in Sources */,
+				7364BCA6266A81B700F53952 /* SceneDelegate.swift in Sources */,
+				7364BCE02676528800F53952 /* EnvironmentValues+ImageCache.swift in Sources */,
+				7364BCA8266A81B700F53952 /* ContentView.swift in Sources */,
+				42BB8008D56562539B2452CB /* SearchView.swift in Sources */,
+				42BB8245A7FF54D1DEDEE46D /* FavoriteView.swift in Sources */,
+				42BB8C65F8B5A9660C0302A7 /* RecipeModel.swift in Sources */,
+				42BB87974D6A79B9A672755C /* IngredientModel.swift in Sources */,
+				42BB841297BDC498D38DF97C /* SearchViewModel.swift in Sources */,
+				42BB8CEDD436719A8A55705F /* APIRequest.swift in Sources */,
+				7364BCDC26764DD000F53952 /* ImageLoader.swift in Sources */,
+				7364BCDA26764DD000F53952 /* AsyncImage.swift in Sources */,
+				42BB85C785F703EFD8E86776 /* Hits.swift in Sources */,
+				42BB84F105CB226C28278E4A /* Hit.swift in Sources */,
+				42BB806694C02E08BE4BE6D6 /* FavoriteViewModel.swift in Sources */,
+				42BB87811BFFFB5597ACEBCC /* RecipeView.swift in Sources */,
+				42BB88C422E4631747B6BE38 /* RecipeViewModel.swift in Sources */,
+				42BB8037AC217636A32EB583 /* APIConfig.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7364BCB5266A81B900F53952 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73BB0B19267ACF82009D16DD /* APIConfig.swift in Sources */,
+				73BB0B18267A5440009D16DD /* RecipeViewTests.swift in Sources */,
+				73BB0B16267A4F84009D16DD /* edamam.xcdatamodeld in Sources */,
+				73BB0B0E267A4F71009D16DD /* SearchView.swift in Sources */,
+				73BB0B0F267A4F71009D16DD /* SearchViewModel.swift in Sources */,
+				73BB0B10267A4F71009D16DD /* Hits.swift in Sources */,
+				73BB0B11267A4F71009D16DD /* Hit.swift in Sources */,
+				73BB0B12267A4F71009D16DD /* FavoriteView.swift in Sources */,
+				73BB0B13267A4F71009D16DD /* FavoriteViewModel.swift in Sources */,
+				73BB0B14267A4F71009D16DD /* APIRequest.swift in Sources */,
+				73BB0B15267A4F71009D16DD /* SceneDelegate.swift in Sources */,
+				73BB0B0D267A4F62009D16DD /* RecipeViewModel.swift in Sources */,
+				73BB0B0C267A4F5F009D16DD /* RecipeView.swift in Sources */,
+				73BB0B0B267A4F5D009D16DD /* IngredientModel.swift in Sources */,
+				73BB0B04267A4EE6009D16DD /* ContentView.swift in Sources */,
+				73BB0B0A267A4F5A009D16DD /* RecipeModel.swift in Sources */,
+				73BB0B09267A4F58009D16DD /* ImageLoader.swift in Sources */,
+				73BB0B08267A4F56009D16DD /* AsyncImage.swift in Sources */,
+				73BB0B07267A4F52009D16DD /* ImageCache.swift in Sources */,
+				73BB0B06267A4F4F009D16DD /* EnvironmentValues+ImageCache.swift in Sources */,
+				73BB0B05267A4F1B009D16DD /* AppDelegate.swift in Sources */,
+				73BB0B03267A4992009D16DD /* ContentViewTests.swift in Sources */,
+				7364BCBE266A81B900F53952 /* edamamTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7364BCC0266A81B900F53952 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7364BCC9266A81B900F53952 /* edamamUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7364BCBB266A81B900F53952 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = 7364BC9F266A81B700F53952 /* edamam */;
+			targetProxy = 7364BCBA266A81B900F53952 /* PBXContainerItemProxy */;
+		};
+		7364BCC6266A81B900F53952 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7364BC9F266A81B700F53952 /* edamam */;
+			targetProxy = 7364BCC5266A81B900F53952 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7364BCB1266A81B800F53952 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7364BCB2266A81B800F53952 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7364BCCB266A81B900F53952 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7364BCCC266A81B900F53952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7364BCCE266A81B900F53952 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"edamam/Preview Content\"";
+				DEVELOPMENT_TEAM = JXB9K587AL;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
+				INFOPLIST_FILE = edamam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.benzotopor.edamam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7364BCCF266A81B900F53952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"edamam/Preview Content\"";
+				DEVELOPMENT_TEAM = JXB9K587AL;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
+				INFOPLIST_FILE = edamam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.benzotopor.edamam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7364BCD1266A81B900F53952 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JXB9K587AL;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = edamamTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.benzotopor.edamamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/edamam.app/edamam";
+			};
+			name = Debug;
+		};
+		7364BCD2266A81B900F53952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JXB9K587AL;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = edamamTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.benzotopor.edamamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/edamam.app/edamam";
+			};
+			name = Release;
+		};
+		7364BCD4266A81B900F53952 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JXB9K587AL;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = edamamUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.benzotopor.edamamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = edamam;
+			};
+			name = Debug;
+		};
+		7364BCD5266A81B900F53952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JXB9K587AL;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = edamamUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.benzotopor.edamamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = edamam;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7364BC9B266A81B700F53952 /* Build configuration list for PBXProject "edamam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7364BCCB266A81B900F53952 /* Debug */,
+				7364BCCC266A81B900F53952 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7364BCCD266A81B900F53952 /* Build configuration list for PBXNativeTarget "edamam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7364BCCE266A81B900F53952 /* Debug */,
+				7364BCCF266A81B900F53952 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7364BCD0266A81B900F53952 /* Build configuration list for PBXNativeTarget "edamamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7364BCD1266A81B900F53952 /* Debug */,
+				7364BCD2266A81B900F53952 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7364BCD3266A81B900F53952 /* Build configuration list for PBXNativeTarget "edamamUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7364BCD4266A81B900F53952 /* Debug */,
+				7364BCD5266A81B900F53952 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		73BB0AFD267A3B68009D16DD /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nalexn/ViewInspector";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		73BB0B01267A46A7009D16DD /* ViewInspector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 73BB0AFD267A3B68009D16DD /* XCRemoteSwiftPackageReference "ViewInspector" */;
+			productName = ViewInspector;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		7364BCA9266A81B700F53952 /* edamam.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7364BCAA266A81B700F53952 /* edamam.xcdatamodel */,
+			);
+			currentVersion = 7364BCAA266A81B700F53952 /* edamam.xcdatamodel */;
+			path = edamam.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7364BC98266A81B700F53952 /* Project object */;
+}
